@@ -2,11 +2,14 @@
 \usepackage[
   paperwidth=157.2mm,
   paperheight=209.6mm,
-  margin=5mm
+  margin=0mm
 ]{geometry}
 \usepackage[chorded]{songs}
 
-\renewcommand{\lyricfont}{\ttfamily} % Monospaced lyrics
+\definecolor{darkred}{RGB}{180,0,0}
+\renewcommand{\printchord}[1]{\textcolor{darkred}{#1}}
+
+%\renewcommand{\lyricfont}{\ttfamily}
 
 \newindex{title}{titleindex}
 \newauthorindex{author}{authorindex}
@@ -14,36 +17,7 @@
 \begin{document}
 
 \begin{songs}{title,author}
-\beginsong{Doxology}[by={Louis Bourgeois and Thomas Ken}]
-\beginverse
-\[G]Praise God, \[D]from \[Em]Whom \[Bm]all \[Em]bless\[D]ings \[G]flow;
-\[G]Praise Him, all \[D]crea\[Em]tures \[C]here \[G]be\[D]low;
-\[Em]Praise \[D]Him \[G]a\[D]bove, \[G]ye \[C]heav'n\[D]ly \[Em]host;
-\[G]Praise Fa\[Em]ther, \[D]Son, \[Am]and \[G/B G/C]Ho\[D]ly \[G]Ghost.
-\[C]A\[G]men.
-\endverse
-\beginverse
-\[G]Praise God, \[D]from \[Em]Whom \[Bm]all \[Em]bless\[D]ings \[G]flow;
-\[G]Praise Him, all \[D]crea\[Em]tures \[C]here \[G]be\[D]low;
-\[Em]Praise \[D]Him \[G]a\[D]bove, \[G]ye \[C]heav'n\[D]ly \[Em]host;
-\[G]Praise Fa\[Em]ther, \[D]Son, \[Am]and \[G/B G/C]Ho\[D]ly \[G]Ghost.
-\[C]A\[G]men.
-\endverse
-\beginverse
-\[G]Praise God, \[D]from \[Em]Whom \[Bm]all \[Em]bless\[D]ings \[G]flow;
-\[G]Praise Him, all \[D]crea\[Em]tures \[C]here \[G]be\[D]low;
-\[Em]Praise \[D]Him \[G]a\[D]bove, \[G]ye \[C]heav'n\[D]ly \[Em]host;
-\[G]Praise Fa\[Em]ther, \[D]Son, \[Am]and \[G/B G/C]Ho\[D]ly \[G]Ghost.
-\[C]A\[G]men.
-\endverse
-\beginverse
-\[G]Praise God, \[D]from \[Em]Whom \[Bm]all \[Em]bless\[D]ings \[G]flow;
-\[G]Praise Him, all \[D]crea\[Em]tures \[C]here \[G]be\[D]low;
-\[Em]Praise \[D]Him \[G]a\[D]bove, \[G]ye \[C]heav'n\[D]ly \[Em]host;
-\[G]Praise Fa\[Em]ther, \[D]Son, \[Am]and \[G/B G/C]Ho\[D]ly \[G]Ghost.
-\[C]A\[G]men.
-\endverse
-\endsong
+	\input{songs/Gods_Of_Rock_N_Roll_Chords_by_Ozzy_Osbourne.tex}
 \end{songs}
 
 \showindex{Index by Title}{title}
