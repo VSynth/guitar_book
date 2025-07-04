@@ -2,21 +2,30 @@
 \usepackage[
   paperwidth=157.2mm,
   paperheight=209.6mm,
-  margin=0mm
+  margin=1mm
 ]{geometry}
+\usepackage{hyperref}
 \usepackage[chorded]{songs}
 
 \definecolor{darkred}{RGB}{180,0,0}
 \renewcommand{\printchord}[1]{\textcolor{darkred}{#1}}
+\renewcommand{\songtarget}[2]
+  {\pdfbookmark[#1]{\thesongnum. \songtitle}{#2}}
+\renewcommand{\songlink}[2]{\hyperlink{#1}{#2}}
 
 %\renewcommand{\lyricfont}{\ttfamily}
 
 \newindex{title}{titleindex}
 \newauthorindex{author}{authorindex}
 
+%\noversenumbers
+\versesep=12pt
+
 \begin{document}
 
 \begin{songs}{title,author}
+	\input{songs/Operator_by_Jim_Croce.tex}
+	\scleardpage
 	\input{songs/Gods_Of_Rock_N_Roll_Chords_by_Ozzy_Osbourne.tex}
 \end{songs}
 
