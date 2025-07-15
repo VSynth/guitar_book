@@ -2,7 +2,7 @@
 \usepackage[
   paperwidth=157.2mm,
   paperheight=209.6mm,
-  margin=1mm
+  margin=2mm
 ]{geometry}
 \usepackage{hyperref}
 \usepackage[chorded]{songs}
@@ -13,18 +13,19 @@
   {\pdfbookmark[#1]{\thesongnum. \songtitle}{#2}}
 \renewcommand{\songlink}[2]{\hyperlink{#1}{#2}}
 
-%\renewcommand{\lyricfont}{\ttfamily}
+\renewcommand{\lyricfont}{\normalfont\small}
 
 \newindex{title}{titleindex}
 \newauthorindex{author}{authorindex}
 
-%\noversenumbers
-\versesep=12pt
+\noversenumbers
+\versesep=6pt
 
 \begin{document}
-
 	\begin{songs}{title,author}
 	\input{songs/Operator_by_Jim_Croce.tex}
+	\scleardpage
+	\input{songs/Andel_by_Karel_Kryl.tex}
 	\scleardpage
 	\input{songs/Gods_Of_Rock_N_Roll_Chords_by_Ozzy_Osbourne.tex}
 	\scleardpage
