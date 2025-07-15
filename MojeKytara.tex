@@ -7,7 +7,7 @@
 \usepackage{hyperref}
 \usepackage[chorded]{songs}
 
-\definecolor{darkred}{RGB}{180,0,0}
+\definecolor{darkred}{RGB}{120,0,0}
 \renewcommand{\printchord}[1]{\textcolor{darkred}{#1}}
 \renewcommand{\songtarget}[2]
   {\pdfbookmark[#1]{\thesongnum. \songtitle}{#2}}
@@ -18,7 +18,8 @@
 \newindex{title}{titleindex}
 \newauthorindex{author}{authorindex}
 
-\noversenumbers
+%\noversenumbers
+\versenumwidth=1pt
 \versesep=6pt
 
 \begin{document}
