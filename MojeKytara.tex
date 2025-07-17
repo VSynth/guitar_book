@@ -1,0 +1,42 @@
+\documentclass[a5paper]{article}
+\usepackage[
+  paperwidth=157.2mm,
+  paperheight=209.6mm,
+  margin=2mm
+]{geometry}
+\usepackage{hyperref}
+\usepackage[chorded]{songs}
+\usepackage[default]{cantarell}
+\usepackage{pgffor}
+
+\definecolor{darkred}{RGB}{120,0,0}
+\renewcommand{\printchord}[1]{\textcolor{darkred}{#1}}
+\renewcommand{\songtarget}[2]
+  {\pdfbookmark[#1]{\thesongnum. \songtitle}{#2}}
+\renewcommand{\songlink}[2]{\hyperlink{#1}{#2}}
+
+\renewcommand{\lyricfont}{\normalfont\normalsize}
+
+\newindex{title}{titleindex}
+\newauthorindex{author}{authorindex}
+
+%\noversenumbers
+\versenumwidth=1pt
+\versesep=6pt
+
+%\ manual ordering 1 author, 2 title
+\begin{document}
+	\begin{songs}{title,author}
+		\input{songs/Operator_by_Jim_Croce.tex}
+		\input{songs/Andel_by_Karel_Kryl.tex}
+		\input{songs/Karavana_Mraku_by_Daniel_Landa.tex}
+		\input{songs/Dreamer_by_Ozzy_Osbourne.tex}
+		\input{songs/Gods_Of_Rock_N_Roll_Chords_by_Ozzy_Osbourne.tex}
+		\input{songs/Amazonka_by_Hop_Trop.tex}
+	\end{songs}
+
+\showindex{Index by Title}{title}
+\showindex{Index by Author}{author}
+
+\end{document}
+
