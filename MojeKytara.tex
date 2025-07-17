@@ -6,6 +6,7 @@
 ]{geometry}
 \usepackage{hyperref}
 \usepackage[chorded]{songs}
+\usepackage[default]{cantarell}
 
 \definecolor{darkred}{RGB}{120,0,0}
 \renewcommand{\printchord}[1]{\textcolor{darkred}{#1}}
@@ -13,7 +14,7 @@
   {\pdfbookmark[#1]{\thesongnum. \songtitle}{#2}}
 \renewcommand{\songlink}[2]{\hyperlink{#1}{#2}}
 
-\renewcommand{\lyricfont}{\normalfont\small}
+\renewcommand{\lyricfont}{\normalfont\normalsize}
 
 \newindex{title}{titleindex}
 \newauthorindex{author}{authorindex}
@@ -22,6 +23,7 @@
 \versenumwidth=1pt
 \versesep=6pt
 
+%\ manual ordering 1 author, 2 title
 \begin{document}
 	\begin{songs}{title,author}
 	\input{songs/Operator_by_Jim_Croce.tex}
