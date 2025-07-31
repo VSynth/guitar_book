@@ -16,7 +16,7 @@
   {\pdfbookmark[#1]{\thesongnum. \songtitle}{#2}}
 \renewcommand{\songlink}[2]{\hyperlink{#1}{#2}}
 
-\renewcommand{\lyricfont}{\normalfont\normalsize}
+\renewcommand{\lyricfont}{\normalfont\large}
 % for mobile
 %\renewcommand{\lyricfont}{\normalfont\LARGE}
 %\songcolumns{1}
@@ -31,15 +31,19 @@
 %\ manual ordering 1 author, 2 title
 \begin{document}
 	\begin{songs}{title,author}
-		\input{songs/Operator_by_Jim_Croce.tex}
-		\input{songs/Andel_by_Karel_Kryl.tex}
-		\input{songs/Karavana_Mraku_by_Daniel_Landa.tex}
-		\input{songs/Dreamer_by_Ozzy_Osbourne.tex}
-		\input{songs/Gods_Of_Rock_N_Roll_Chords_by_Ozzy_Osbourne.tex}
-		\input{songs/Amazonka_by_Hop_Trop.tex}
+		\foreach \trps in {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11} {
+			\input{songs/Operator_by_Jim_Croce.tex}
+			\input{songs/Andel_by_Karel_Kryl.tex}
+			\input{songs/Karavana_Mraku_by_Daniel_Landa.tex}
+			\input{songs/Dreamer_by_Ozzy_Osbourne.tex}
+			\input{songs/Gods_Of_Rock_N_Roll_Chords_by_Ozzy_Osbourne.tex}
+			\input{songs/Amazonka_by_Hop_Trop.tex}
+		}
 	\end{songs}
 
+%\pdfbookmark[1]{Index by Title}{titleindex}
 \showindex{Index by Title}{title}
+%\pdfbookmark[1]{Index by Author}{authorindex}
 \showindex{Index by Author}{author}
 
 \end{document}
