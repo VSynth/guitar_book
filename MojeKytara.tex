@@ -1,4 +1,4 @@
-\documentclass[a5paper]{article}
+\documentclass[a4paper]{article}
 \usepackage[
   paperwidth=157.2mm,
   paperheight=209.6mm,
@@ -7,16 +7,13 @@
 \usepackage{hyperref}
 \usepackage[chorded]{songs}
 \usepackage{pgffor}
-\usepackage{txfonts}
-\usepackage[T1]{fontenc}
 
-\definecolor{darkred}{RGB}{120,0,0}
-\renewcommand{\printchord}[1]{\textcolor{darkred}{#1}}
 \renewcommand{\songtarget}[2]
   {\pdfbookmark[#1]{\thesongnum. \songtitle}{#2}}
 \renewcommand{\songlink}[2]{\hyperlink{#1}{#2}}
 
-\renewcommand{\lyricfont}{\normalfont\large}
+\renewcommand{\lyricfont}{\small}
+\renewcommand{\printchord}[1]{\sffamily\slshape\small#1}
 % for mobile
 %\renewcommand{\lyricfont}{\normalfont\LARGE}
 %\songcolumns{1}
