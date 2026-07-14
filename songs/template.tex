@@ -1,0 +1,27 @@
+\songcolumns{1}
+\beginsong{NAME - \trps}[by={AUTHOR}]
+	\newchords{NAME_verse\trps}
+	\newchords{NAME_chorus\trps}
+	\transpose{\trps}
+	\beginverse*
+		{\nolyrics \textbf{Intro:} \[G]}
+	\endverse
+	\beginverse\memorize[NAME_verse\trps]
+		VERSE
+	\endverse
+	\beginchorus\memorize[NAME_chorus\trps]
+		\chordsoff
+			\textbf{[Chorus]}
+		\chordson
+		CHORUS
+	\endchorus
+	\beginverse\replay[NAME_verse\trps]
+		VERSE
+	\endverse
+	\beginchorus\replay[NAME_chorus\trps]
+		\chordsoff
+			\textbf{[Chorus]}
+		\chordson
+		CHORUS
+	\endchorus
+\endsong
