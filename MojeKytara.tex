@@ -14,9 +14,9 @@
 
 \renewcommand{\lyricfont}{\small}
 \renewcommand{\printchord}[1]{\sffamily\slshape\small#1}
+\newcommand{\inputSong}[1]{\input{#1}}
 % for mobile
 %\renewcommand{\lyricfont}{\normalfont\LARGE}
-%\songcolumns{1}
 
 \newindex{title}{titleindex}
 \newauthorindex{author}{authorindex}
@@ -29,12 +29,13 @@
 \begin{document}
 	\begin{songs}{title,author}
 		\foreach \trps in {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11} {
-			\input{songs/Operator_by_Jim_Croce.tex}
-			\input{songs/Andel_by_Karel_Kryl.tex}
-			\input{songs/Karavana_Mraku_by_Daniel_Landa.tex}
-			\input{songs/Dreamer_by_Ozzy_Osbourne.tex}
-			\input{songs/Gods_Of_Rock_N_Roll_Chords_by_Ozzy_Osbourne.tex}
-			\input{songs/Amazonka_by_Hop_Trop.tex}
+			\inputSong{songs/Operator_by_Jim_Croce.tex}
+			\inputSong{songs/Andel_by_Karel_Kryl.tex}
+			\inputSong{songs/Vis_by_Keks.tex}
+			\inputSong{songs/Karavana_Mraku_by_Daniel_Landa.tex}
+			\inputSong{songs/Dreamer_by_Ozzy_Osbourne.tex}
+			\inputSong{songs/Gods_Of_Rock_N_Roll_Chords_by_Ozzy_Osbourne.tex}
+			\inputSong{songs/Amazonka_by_Hop_Trop.tex}
 		}
 	\end{songs}
 
